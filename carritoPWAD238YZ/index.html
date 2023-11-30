@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+   <head>
+
+      <meta charset ="UTF-8">
+      <meta name="vieweport" content="width=device-width, initial-scale=1.0">
+      <title>Idol Place</title>
+      <link rel="stylesheet" href="css/estilo.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      
+   </head>
+      <body>
+         <header id="h_i" class="d-flex justify-content-between  align-items-center">
+            <div id="menu">
+               <i id="menu_b" class="btos bi bi-list"></i>
+            </div>
+            <div class="d-flex align-items-center">
+               <img id="LogoNombre" src="img/LogoIdolPlace.png" width="500"height="100"></center>
+               <img id="LogoIcon" src="img/idolicon.png" width="100"height="100"></center>
+            </div>
+
+            <nav id="menu">
+               <i id="bto1" class="btos bi bi-search"></i>
+               <i id="bto2" class="btos bi bi-person-circle" onclick="document.getElementById('loginForm').style.display='block'"></i>
+               <i id="bto3" class="btos bi bi-bag" onclick="document.getElementById('cart').style.display='block'"></i>
+            </nav>
+         </header>
+
+      <div id="oscuro" class="content">
+
+      </div>
+         <div id="searchBar" class="searchBar">
+            <form class="d-flex">
+            <input id="bar_buscador" class="form-control" type="text" placeholder="Search...">
+            <button class="btos bi bi-search"></button>
+            </form>
+         </div>
+
+      <div id="loginForm" class="modal">
+         <span onclick="document.getElementById('loginForm').style.display='none'" class="close" title="Close Modal">&times;
+         </span>
+
+         <form class="modal-content animate" action="" method="post">
+            <div class="imgcontainer">
+               <img id="img_avatar" src="img/avatar_picture.png" alt="Avatar" class="avatar">
+            </div>
+            <div id="div_campos" class="container d-flex flex-column">
+               <label id="nom_usu" for="uname"><b>Nombre de Usuario</b></label>
+               <input id="nom_usu_camp" type="text" placeholder="Introduce nombre de usuario" name="uname" required>
+
+               <label id="pass" for="psw"><b>Contraseña</b></label>
+               <input id="pass_camp" type="password" placeholder="Ingresa tu contraseña" name="psw" required>
+
+               <button id="btn_inicio_sesion" type="submit">Iniciar sesión</button>
+               <label id="opciones_login">
+               <input id="box_recordar" type="checkbox" checked="none" name="remember"> Recordarme
+               </label>
+            </div>
+
+            <div class="container d-flex flex-column" style="background-color:#f1f1f1">
+               <button id="btn_inicio_sesion" type="button" class="cancelbtn">Cancelar</button>
+               <span id="opciones_login" class="psw">¿Olvidaste tu <a href="#">contraseña?</a></span>
+            </div>
+
+         </form>
+      </div>
+
+      <div id="cart" class="modal">
+         <div class="modal-content animate">Aquí va el carrito</div>
+      </div>
+
+         <main>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img id="TOP" src="img/TopGroups/Top1.jpg" class="d-block w-100" alt="Task Have Fun">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 id="carr_text_1" class="top_nombre" >Task Have Fun </h5>
+                      <p class="p_frase" >Ingresa para conocer más del grupo</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img id="TOP" src="img/TopGroups/Top2.jpg" class="d-block w-100" alt="PiXMiX">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 id="carr_text_1" class="top_nombre" >Grupos con nuevos lanzamientos</h5>
+                      <p class="p_frase" >Haz click para ver los nuevos lanzamientos</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img id="TOP" src="img/TopGroups/Top3.jpg" class="d-block w-100" alt="Nuevos grupos">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 id="carr_text_1" class="top_nombre" >Nuevos grupos</h5>
+                      <p class="p_frase" >Da click para conocer grupos nuevos</p>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+
+            <h3 class="h3_cat">Articulos mas vendidos </h3>
+
+            <section id="articulos_mas_vendidos" class="d-flex flex-wrap">
+              <div id="div_card1" class="card m-4">
+                 <img id="img_card" src="img/Products/BabyMetalTShirtBlack.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">Camisa BABYMETAL Color Negro</h5>
+                    <h6 id="precio">$480.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+                 </div>
+              </div>
+              <div id="div_card1" class="card m-4">
+                 <img id="img_card" src="img/Products/BabyMetalBlackBag.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">Mini Tote BABYMETAL</h5>
+                    <h6 id="precio">$670.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+                 </div>
+              </div>
+              <div id="div_card1" class="card m-4">
+                 <img id="img_card" src="img/Products/YoasobiBlackJersey.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">Yoasobi Jersey</h5>
+                    <h6 id="precio">$780.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+                 </div>
+              </div>
+              <div id="div_card1" class="card m-4">
+                 <img id="img_card" src="img/Products/YoasobiSesameStreetTruckBag.png" width="250px"height="250px" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">Yoasobi Tote</h5>
+                    <h6 id="precio">$440.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+                 </div>
+              </div>
+              <div id="div_card1" class="card m-4">
+                 <img id="img_card" src="img/Products/NanaMoriYoRoKoBiTShirt.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">Bucket-kun Camisa</h5>
+                    <h6 id="precio">$420.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+                 </div>
+              </div>
+               <div id="div_card1" class="card m-4">
+                 <img id="img_card" src="img/Products/NanaMoriYoRoKoBiTShirt2.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">Yorokobi Camisa</h5>
+                    <h6 id="precio">$360.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+                 </div>
+              </div>
+              <div id="div_card1" class="card m-4">
+                 <img id="img_card" src="img/Products/VibesTaskHaveFun.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">Task Have Fun Album: Vibes</h5>
+                    <h6 id="precio">$190.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+                 </div>
+              </div>
+              <div id="div_card1" class="card m-4">
+                 <img id="img_card" src="img/Products/VioletTearsTaskHaveFun.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title">Task Have Fun Album: Violet Tears</h5>
+                    <h6 id="precio">$360.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+                 </div>
+              </div>                            
+           </section>
+
+<!-- Promos y descuentos -->
+
+<h3 href="#"  class="h3_cat">Ofertas Especiales</h3>
+<section id="ofertas" class="d-flex flex-wrap">
+<div id="div_card1" class="card m-4">
+   <img id="img_card" src="img/Products/AtarashiiGakkonoLeadersDokubana.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+<div class="card-body">
+   <h5 class="card-title">Atarashii Gakkou Sencillo: Dokubana </h5>
+   <h7 id="precio_no_desc">$360.00</h7>
+   <h6 id="precio">$160.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+   </div>
+</div>
+<div id="div_card1" class="card m-4">
+   <img id="img_card" src="img/Products/AtarashiiGakkonoLeadersMaenarawanai.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+   <div class="card-body">
+      <h5 class="card-title">Atarashii Gakkou Album: Maenarawanai</h5>
+      <h7 id="precio_no_desc">$450.00</h7>
+      <h6 id="precio">$370.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+   </div>
+</div>
+<div id="div_card1" class="card m-4">
+   <img id="img_card" src="img/Products/KyaruPamyuPamyuCandyRacer.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+   <div class="card-body">
+   <h5 class="card-title">Kyaru Pamyu Pamyu Album: CandyRacer</h5>
+   <h7 id="precio_no_desc">$500.00</h7>
+   <h6 id="precio">$460.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+   </div>
+</div>
+<div id="div_card1" class="card m-4"> 
+   <img id="img_card" src="img/Products/KarenPhotoset.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+   <div class="card-body">
+   <h5 class="card-title">Shorin Ishikawa Karen 1st photo book</h5>
+   <h7 id="precio_no_desc">$550.00</h7>
+   <h6 id="precio">$400.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+   </div>
+</div>   
+   <div id="div_card1" class="card m-4">
+   <img id="img_card" src="img/Products/YuukoTsubakinoPhotoset.jpg" width="250px"height="250px" class="card-img-top" alt="...">
+<div class="card-body">
+   <h5 class="card-title">Yuuko Tsubakino 1st photo book</h5>
+   <h7 id="precio_no_desc">$550.00</h7>
+   <h6 id="precio">$410.00</h6>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Comprar</a>
+                    <a href="#" id="text_b" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Añadir al carrito">Añadir al carrito</a>
+   </div>
+</div>
+</section>     
+
+<!-- Paquetes especiales !-->
+
+      <h3 class="h3_cat">Paquetes especiales</h3>
+      <section class="starProds d-flex flex-wrap">
+         <div id="prod_estrella_contenedor" class="starProd m-4 d-flex align-items-center">
+            <div id="prod_estrella_frame" class="prodFrame">
+               <div id="prod_estrella_img" class="imgProdStar"></div>
+            </div>
+            <div class="prodDetails">
+               <h3 id="prod_estrella_nom">"Caja Misteriosa 1"</h3>
+               <p>Precio: $550.00</p>
+               <button id="prod_estrella_btn" class="btn btn-success fw-bold">Comprar ahora</button>
+            </div>
+         </div>
+         <div class="starProd m-4 d-flex align-items-center">
+            <div id="prod_estrella_frame" class="prodFrame">
+               <div id="prod_estrella_img" class="imgProdStar"></div>
+            </div>
+            <div class="prodDetails">
+               <h3 id="prod_estrella_nom">"Caja Misteriosa 1"</h3>
+               <p>Precio: $1100.00</p>
+               <button id="prod_estrella_btn" class="btn btn-success fw-bold">Comprar ahora</button>
+            </div>
+         </div>
+         <div class="starProd m-4 d-flex align-items-center">
+            <div id="prod_estrella_frame" class="prodFrame">
+               <div id="prod_estrella_img" class="imgProdStar"></div>
+            </div>
+            <div class="prodDetails">
+               <h3 id="prod_estrella_nom">"Caja Misteriosa 1"</h3>
+               <p>Precio: $1600.00</p>
+               <button id="prod_estrella_btn" class="btn btn-success fw-bold">Comprar ahora</button>
+            </div>
+         </div>
+         <div class="starProd m-4 d-flex align-items-center">
+            <div id="prod_estrella_frame" class="prodFrame">
+               <div id="prod_estrella_img" class="imgProdStar"></div>
+            </div>
+            <div class="prodDetails">
+               <h3 id="prod_estrella_nom">"Caja Misteriosa 4"</h3>
+               <p>Precio: $2100.00</p>
+               <button id="prod_estrella_btn" class="btn btn-success fw-bold">Comprar ahora</button>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+         <footer>
+            <header id="footer_header" class="d-flex justify-content-between  align-items-center">
+            <div id="menu">
+                <button id="btomenu"  class="btos material-symbols-outlined">
+
+                </button>
+            </div>
+            <div class="d-flex align-items-center">
+
+              <h8 id="footer_derechos">© IDOLPLACE 2023 | Todos los Derechos Reservados | Términos de uso | Política de privacidad</h8>
+            </div>
+
+               <nav id="nave">
+                <button id="bto1"  class="btos material-symbols-outlined">
+                    
+                </button>
+                <button id="bto1"  class="btos material-symbols-outlined">
+                    
+                </button>
+                <button id="bto1"  class="btos material-symbols-outlined">
+                    
+                </button>
+               </nav>
+            </header>           
+       </footer>
+         
+    </body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+    <script src="js/script.js"></script>
+
+</html>

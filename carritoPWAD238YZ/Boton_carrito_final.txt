@@ -1,0 +1,13 @@
+Boton_carrito_final
+
+<div class="starProd m-4" d-flex align-items-center>
+   <div class="prodFrame me-2">
+      <div class="imgProdStar"></div>
+  </div>
+
+  <div class="prodDetails ms-2">
+       <h4>Carrito de Compra </h4> 
+       <p>Precio: $0000.00</p>
+       <button>Acceder al carrito</button>
+     </div>
+</div>

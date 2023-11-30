@@ -1,0 +1,74 @@
+@media screen and (min-width:1920px){
+
+.carouselExampleCaptions{
+width: 1000pt;
+height: 800px;
+}
+.carousel-inner{
+width: 1000pt;
+height: 800px;
+}
+
+#TOP{
+width: 1000px;
+height: 800px;
+}
+
+    #nave i{
+         color:purple;
+         font-size: 40px;
+     }
+     #categorias{
+         flex-flow: row wrap;
+         }
+         .card{
+             width: 43%;
+         }
+         #articulos_mas_vendidos{
+          flex-flow: row wrap;  
+         }
+     }
+
+
+
+
+
+
+
+
+
+
+
+.carouselExampleCaptions{
+width: 500pt;
+height: 700px;
+}
+.carousel-inner{
+width: 500pt;
+height: 700px;
+}
+
+.carousel-item{
+width: 500pt;
+height: 700px;
+}
+
+/**#TOP{
+width: 500px;
+height: 700px;
+}**/
+
+    #nave i{
+         color:purple;
+         font-size: 40px;
+     }
+     #categorias{
+         flex-flow: row wrap;
+         }
+         .card{
+             width: 43%;
+         }
+         #articulos_mas_vendidos{
+          flex-flow: row wrap;  
+         }
+     }
